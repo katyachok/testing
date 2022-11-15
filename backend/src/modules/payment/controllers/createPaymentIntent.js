@@ -18,7 +18,7 @@ export const createPaymentIntent = (req, res) => {
 		if(error){
 			new CustomAPIError(HttpStatusCode.BAD_REQUEST, error);
 			return res.status(HttpStatusCode.BAD_REQUEST).send(error);
-		}else{
+		} else {
 			return res.status(HttpStatusCode.OK).send(result.payment_intent);
 		}
 	});

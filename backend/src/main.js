@@ -22,7 +22,7 @@ app.use('/api/subscriptions', subscriptionsRouter);
 app.use('/api/items', itemsRouter);
 app.use('/api/payment', PaymentRouter);
 app.use('/api/invoices', InvoiceRouter);
-app.use('/api/sendemail', EmailRouter);
+app.use('/api/email', EmailRouter);
 app.use(errorHandlerMiddleware);
 
 app.all('*', (req, res) => {
